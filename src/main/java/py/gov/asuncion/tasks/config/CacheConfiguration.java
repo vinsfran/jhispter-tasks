@@ -38,6 +38,7 @@ public class CacheConfiguration {
             cm.createCache(py.gov.asuncion.tasks.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(py.gov.asuncion.tasks.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(py.gov.asuncion.tasks.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(py.gov.asuncion.tasks.domain.Task.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
